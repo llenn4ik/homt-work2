@@ -1,0 +1,62 @@
+
+body.conteiner {
+  width: 900px;
+   margin: 0 auto;
+ }
+
+nav ul li a:hover {
+  color: #03a9f4;
+   text-decoration: none
+  }
+
+  ul {list-style: none; } 
+  ul {text-align: center; 
+    font-size: 0;
+    font-family: "Myriad Pro";
+    line-height: 1.714;
+     text-transform: uppercase; 
+     margin: 0 ;
+    padding: 0 ;
+  } 
+   li a{
+    font-size: 12px;
+  }
+  li {display: inline-block;
+     margin-right: 60px;
+  } 
+
+  nav li:last-child {margin-right: 0;}  
+li .menu-item {
+  text-decoration: none;
+  color: #000000
+}
+main {
+    color: rgb(98, 98, 98);
+    font-family: "Myriad Pro"; }
+
+  article{
+      display: inline-block;
+       width: 420px;
+      margin-right: 60px;
+       box-sizing: border-box;
+       margin-bottom: 60px;
+   }
+  article:nth-child(2n){margin-right: 0;}
+
+ section{
+    margin: 0 auto;
+
+    text-align: left;
+    }
+
+.p {
+    font-size: 14px;
+
+    text-transform: uppercase;
+  }
+.h3 {
+    font-size: 30px;
+
+}  
+div .knopka {text-align: center;}
+div button:hover {color: rgb(148, 19, 19);} 
