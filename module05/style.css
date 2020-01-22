@@ -142,7 +142,10 @@ main .conteiner {
     background-color:  #dce5f5e5;
  
 }
-.h21 {
+.products {
+    background-color:  #dce5f5e5;
+} 
+.h21{
     font-size: 35px;
     font-family: "Roboto";
     color: #515151;
@@ -162,7 +165,7 @@ main .conteiner {
         width: 210px;
         background-color: #4ec6ab; }
 
- .item-block:hover  {
+ .item-block:hover {
             background-color: #7777aa;
         }
  .item-block:hover  .img, .item-block:hover  .name, .item-block:hover  .price{
