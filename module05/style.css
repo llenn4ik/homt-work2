@@ -34,13 +34,20 @@ color: rgb(26, 188, 156);
 .logo{
     float: left;
     text-transform: uppercase;
-    position: absolute;
-    top: 32px;
+   /* position: absolute;
+    top: 32px;*/
     font-size: 30px;
 }
 .logo-link{
     text-decoration: none;
-}
+    font-family: 'Roboto', sans-serif;
+     font-size: 30px;
+     color: #0f0101;
+       text-transform: uppercase;}
+
+ 
+
+
 .logo::first-letter{
     color: rgb(26, 188, 156);
 }
@@ -54,6 +61,8 @@ color: rgb(26, 188, 156);
     content: "";
     display: table;
      clear: both; }
+
+     
 /*  SLIDER */
 .slider {
     height: 600px;
@@ -153,7 +162,7 @@ main .conteiner {
         width: 210px;
         background-color: #4ec6ab; }
 
- .item-block:hover  .img:{
+ .item-block:hover  {
             background-color: #7777aa;
         }
  .item-block:hover  .img, .item-block:hover  .name, .item-block:hover  .price{
@@ -231,8 +240,8 @@ main .conteiner {
     border-style: solid;
     width: 160px;
     color: #ffffff;
-    margin-left: 10px;
-    margin-top: 20px;
+    /*margin-left: 6px;*/
+    margin-top: 10px;
     background-color: #323232;
 }
 .line:hover .lay-ic, .line-two{
@@ -248,30 +257,33 @@ main .conteiner {
     background-position: left;
 }
 .vpravo{ float: right;}
-.box:hover{
-    background: #1abc9c;
-}
+
 .butt{
     width:50px;
     height:50px;
 }
-.butt1:hover{
-   
+.butt1{
+     
     background: url(img/slides/icon01.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.butt2:hover{
+.butt:hover{
+    background: #1abc9c;
+}
+.butt2{
     background: url(img/slides/icon02.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.butt3:hover{
+.butt3{
     background: url(img/slides/icon03.png);
 background-repeat: no-repeat;
     background-position: center;
 }
-
+.line-two:hover{
+    background: #1abc9c
+}
 /*footer c fonom*/
 
 footer {
