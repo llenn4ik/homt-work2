@@ -34,8 +34,8 @@ color: rgb(26, 188, 156);
 .logo{
     float: left;
     text-transform: uppercase;
-   /* position: absolute;
-    top: 32px;*/
+   /* position: absolute;*/
+    margin-top: 32px;
     font-size: 30px;
 }
 .logo-link{
@@ -140,7 +140,8 @@ color: rgb(26, 188, 156);
 /*  MAIN = H21 + after + картинки */
 main .conteiner {
     background-color:  #dce5f5e5;
- 
+    width: 1110px;
+    margin: 0 auto;
 }
 .products {
     background-color:  #dce5f5e5;
@@ -153,7 +154,7 @@ main .conteiner {
     text-align: center;
     position: relative;
     font-weight: 900px;
-    height: 33px;
+    /*height: 33px;*/
     margin-bottom: 40px;
   }
  .h21::after {
@@ -179,6 +180,7 @@ main .conteiner {
             max-width: 250px;
             position: relative;
             text-decoration: none;
+            margin-left: auto;
         }
 
 .overlay {

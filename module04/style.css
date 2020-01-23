@@ -45,6 +45,8 @@ header::after{
 
 .clearfix { clear: both; }
 
+
+/*main*/
 .h21 {
     font-size: 30px;
     font-family: "Myriad Pro";
@@ -69,15 +71,19 @@ header::after{
  .item-block:hover  .img::before{
             background-color: #7777aa;
         }
- .item-block:hover  .img, .item-block:hover  .name, .item-block:hover  .price{
-            background: #1abc9c;
-        }
+.item-block:hover  .name{
+    background-color: #4ec6ab;
+}
+.item-block:hover  .price{
+    background-color: #4ec6ab;
+}
  .item-block {
             float: left;
             display: block;
             margin-right: 14px;
             margin-bottom: 30px;
             max-width: 250px;
+            background-color: #d4dceb;
         }
  .item-block .img{
      background-color: #d4dceb;
@@ -117,6 +123,7 @@ header::after{
         margin-right: 8px;
         margin-bottom: 30px;
         max-width: 345px;
+
       }
 
 .h44::after {
@@ -129,10 +136,18 @@ header::after{
     background-color: #4ec6ab; }
 
 
-button{
-    background-color: #4ec6ab;
+.button:hover{
+   
 }
-div button:hover {
+.button:hover{
     color: #f50e7a;
 
 }
+.button {
+    list-style: none;
+    border-radius: 2px; 
+    background-color: #4ec6ab;
+    color: #0f0101; 
+    text-decoration: none;
+}
+   
