@@ -1,5 +1,8 @@
 
-body.conteiner {
+body{
+  margin: 0;
+}
+.conteiner {
   width: 900px;
    margin: 0 auto;
  }
@@ -45,8 +48,9 @@ main {
 
  section{
     margin: 0 auto;
-
+font-size: 0px;
     text-align: left;
+   /* ??> padding-bottom: 2px */
     }
 
 .p {
