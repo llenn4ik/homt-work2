@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    widows: 2100;
+}
+.menu-link {
+    text-decoration: none;
+    color: #95e1d3;
+}
+.logo-link{
+    text-decoration: none;
+    color: #95e1d3;
+}
+.page-n{
+    display: flex;
+    justify-content: space-between;
+    min-height: 94px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 490px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+sec>ul>li>div>img  background color
+потом анимация

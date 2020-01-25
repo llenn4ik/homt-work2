@@ -3,6 +3,17 @@
     padding:0;
 }
 
+html {
+    box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+    }
+    
+    
 /* ХЕДЕР = Лого + навигация*/
 .wrapper{
     width: 1110px;
@@ -136,18 +147,20 @@ color: rgb(26, 188, 156);
     font-size: 17px;
 }
 
-
 /*  MAIN = H21 + after + картинки */
-main .conteiner {
-    background-color:  #dce5f5e5;
+main {
     width: 1110px;
     margin: 0 auto;
 }
 .products {
     background-color:  #dce5f5e5;
+   
 } 
+.cotainer{
+     margin-top: 30px;
+}
 .h21{
-    font-size: 35px;
+    font-size: 34px;
     font-family: "Roboto";
     color: #515151;
     text-transform: uppercase;
@@ -155,7 +168,9 @@ main .conteiner {
     position: relative;
     font-weight: 900px;
     /*height: 33px;*/
-    margin-bottom: 40px;
+    margin-bottom: 90px;
+   
+  
   }
  .h21::after {
         content: "";
@@ -165,6 +180,13 @@ main .conteiner {
         height: 7px;
         width: 210px;
         background-color: #4ec6ab; }
+
+ .item-block{
+margin-right: 30px; }     
+
+.item-block:last-child{
+margin-right: 0;
+}
 
  .item-block:hover {
             background-color: #7777aa;
@@ -177,7 +199,7 @@ main .conteiner {
             display: block;
             margin-right: 14px;
             margin-bottom: 30px;
-            max-width: 250px;
+            max-width: 255px;
             position: relative;
             text-decoration: none;
             margin-left: auto;
@@ -187,18 +209,22 @@ main .conteiner {
     position: absolute;
     width: 100% ;
     height: 326px;
-    background-color: #737373;
+   
     opacity: 0;
     text-align: center;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.549);
 }
 
 .item-block:hover .overlay {
-    opacity: 0.7;
+    opacity: 1;
 }
 
  .item-block .img{
      background-color: #d4dceb;
-     max-width: 250px;
+     max-width: 255px;
+     margin-bottom: 0;
  }
 .item-blok-text {
     height: 18px;
@@ -213,7 +239,7 @@ main .conteiner {
     background-color: #323232;
     text-transform: uppercase;
     display: inline-block;
-    width: 195px;
+    width: 200px;
 }
 .item-block .price{
     background-color: #8c8c8c;

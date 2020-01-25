@@ -1,4 +1,7 @@
 
+*{
+  font-size:0;
+}
 body{
   margin: 0;
 }
@@ -15,7 +18,7 @@ nav ul li a:hover {
   ul {list-style: none; } 
   ul {text-align: center; 
     font-size: 0;
-    font-family: "Myriad Pro";
+    font-family:'Roboto', sans-serif;;
     line-height: 1.714;
      text-transform: uppercase; 
      margin: 0 ;
@@ -25,9 +28,12 @@ nav ul li a:hover {
     font-size: 12px;
   }
   li {display: inline-block;
-     margin-right: 60px;
+     margin-right: 100px;
   } 
-
+header{
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
   nav li:last-child {margin-right: 0;}  
 li .menu-item {
   text-decoration: none;
@@ -35,12 +41,13 @@ li .menu-item {
 }
 main {
     color: rgb(98, 98, 98);
-    font-family: "Myriad Pro"; }
+    font-family: "Myriad Pro";
+ }
 
   article{
       display: inline-block;
        width: 420px;
-      margin-right: 60px;
+      margin-right: 50px;
        box-sizing: border-box;
        margin-bottom: 60px;
    }
@@ -48,19 +55,35 @@ main {
 
  section{
     margin: 0 auto;
-font-size: 0px;
     text-align: left;
-   /* ??> padding-bottom: 2px */
     }
 
-.p {
-    font-size: 14px;
+img{
+  margin: 0px;
+  margin-bottom: 30px;
+}
 
-    text-transform: uppercase;
+.title{
+  text-transform: uppercase;
+}
+p {
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 30px;
   }
-.h3 {
+h3 {
     font-size: 30px;
+    margin: 0px;
+    margin-bottom: 30px;
 
 }  
-div .knopka {text-align: center;}
+div .knopka {text-align: center;
+height: 60px;
+}
+button{
+  font-size: 20px;
+  color: rgb(98, 98, 98);
+  margin-bottom: 70px;
+  padding: 10px;
+}
 div button:hover {color: rgb(148, 19, 19);} 

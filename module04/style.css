@@ -3,7 +3,7 @@
     padding:0;
 }
 font-family: "Playfair Display", sans-serif;
-.conteiner{
+.container{
     width:1110px;
     margin:0 auto;
     font-family:"Playfair Display" ;
@@ -80,7 +80,7 @@ header::after{
  .item-block {
             float: left;
             display: block;
-            margin-right: 14px;
+            margin-right: 30px;
             margin-bottom: 30px;
             max-width: 250px;
             background-color: #d4dceb;
@@ -109,8 +109,11 @@ header::after{
     height: 44px;
     line-height:44px ;
 }
-
- 
+/*.fouth  {
+    color: #f00;*/
+.featured li:nth-child(4n+4){ 
+    margin-right: 0px;
+} 
 
 .price-item {
     text-align: center;
@@ -126,7 +129,7 @@ header::after{
 
       }
 
-.h44::after {
+.h4::after {
     content: "";
     display: block;
     top: 10px;
@@ -134,7 +137,9 @@ header::after{
     height: 7px;
     width: 140px;
     background-color: #4ec6ab; }
-
+.three{
+    margin-right: 0px;
+}
 
 .button:hover{
    
