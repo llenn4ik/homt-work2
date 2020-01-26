@@ -2,17 +2,22 @@
     margin:0;
     padding:0;
 }
-font-family: "Playfair Display", sans-serif;
+
 .container{
     width:1110px;
     margin:0 auto;
-    font-family:"Playfair Display" ;
+    font-family: 'PT Sans', sans-serif ;
+}
+header{
+    height: 100px;
+
 }
 nav ul li{
     float: left;
     list-style: none;
     margin-right: 35px ;
     text-transform: uppercase;
+    margin-top: 40px;
 
 }
 .link{color: #0f0101;
@@ -31,6 +36,8 @@ nav{float: right;
     text-transform: uppercase;
     font-size: 30px;
     text-decoration: none;
+    margin-top: 18px;
+    color: #0f0101;
     
 }
 .logo::first-letter{
@@ -46,25 +53,23 @@ header::after{
 .clearfix { clear: both; }
 
 
-/*main*/
+/*main font-family:"Playfair Display"*/
 .h21 {
     font-size: 30px;
-    font-family: "Myriad Pro";
     color: rgb(81, 81, 81);
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    font-weight: 900px;
+    font-weight: 700px;
     height: 33px;
-    z-index: 110;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
  .h21::after {
         content: "";
         position: absolute;
-        top: 35px;
+        margin-top: 52px;
         right: calc(50% - 105px);
-        height: 7px;
+        height: 6px;
         width: 210px;
         background-color: #4ec6ab; }
 
@@ -84,7 +89,11 @@ header::after{
             margin-bottom: 30px;
             max-width: 250px;
             background-color: #d4dceb;
+            color: #ffffff;
+   
+
         }
+    
  .item-block .img{
      background-color: #d4dceb;
      max-width: 250px;
@@ -109,8 +118,7 @@ header::after{
     height: 44px;
     line-height:44px ;
 }
-/*.fouth  {
-    color: #f00;*/
+
 .featured li:nth-child(4n+4){ 
     margin-right: 0px;
 } 
@@ -126,33 +134,36 @@ header::after{
         margin-right: 8px;
         margin-bottom: 30px;
         max-width: 345px;
-
+        font-family: 'PT Sans', sans-serif;
       }
 
-.h4::after {
+.h44::after {
     content: "";
     display: block;
-    top: 10px;
+    margin-top: 20px;
     right: calc(50% - 170px);
-    height: 7px;
+    height: 4px;
     width: 140px;
-    background-color: #4ec6ab; }
+    background-color: #4ec6ab; 
+}
+h4 {
+    margin-bottom: 30px;
+}
+.bog-text{
+margin-bottom: 20px;}
 .three{
     margin-right: 0px;
-}
-
-.button:hover{
-   
 }
 .button:hover{
     color: #f50e7a;
 
 }
-.button {
+.bog-link {
     list-style: none;
     border-radius: 2px; 
     background-color: #4ec6ab;
     color: #0f0101; 
     text-decoration: none;
+    widows: 160px;
+    height: 50px;
 }
-   

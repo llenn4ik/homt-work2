@@ -4,6 +4,7 @@
 }
 .wrapper{
     width: 1200px;
+    margin: 0 auto;
 }
 li {list-style: none;
    }
@@ -24,6 +25,7 @@ li {list-style: none;
     text-decoration: none;
     color: #95e1d3;
  font-size: 30px;
+ font-family: 'Open Sans', sans-serif;
 
 
 
@@ -34,15 +36,16 @@ li {list-style: none;
     min-height: 94px;
      align-items: center;
 }
-ul{
+.menu{
     display: flex;
     justify-content: space-between;
     flex: 0 0 490px;
 
 }
 .menu-item{
-
+display: block;
 }
+
 .menu a:hover{
     color: #f38181;
     transition: color 200ms linear;
@@ -176,7 +179,7 @@ SECTION 2
 }
 .teem-item{
     display: flex;
-    margin-bottom: 74px;
+
     text-align: center;
     line-height: 1.8;
 }
@@ -195,6 +198,7 @@ img{
 }
 .teem-item li:hover{
        transform: translate(-10px,-10px);
+
 }
 
 .card{
@@ -214,36 +218,40 @@ img{
 }
 .card .overlay:hover{
     opacity: 1;
+    transition: opacity 200ms linear;
 }
-.overlay .sc:hover{
+.overlay .social:hover{
     background-color: #95e1d3;
 }
-.sc{
+.social{
     width: 60px;
     height: 60px;
-    background: #fce38a ;
 
 }
 
-.f{
-    background: url(img/social/facebook.png);  
+.faceb{
+    background-image: url(img/social/facebook.png);  
       background-repeat: no-repeat;
       background-position: center;
+      background-color: #fce38a ;
 }
-.t{
-    background: url(img/social/twitter.png);  
+.twitt{
+    background-image: url(img/social/twitter.png);  
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #fce38a ;
 }
-.p{
-    background: url(img/social/pinterest.png);  
+.pint{
+    background-image: url(img/social/pinterest.png);  
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #fce38a ;
 }
-.i{
-    background: url(img/social/instagram.png);  
+.inst{
+    background-image: url(img/social/instagram.png);  
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #fce38a ;
 }
 
 /*
