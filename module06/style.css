@@ -8,10 +8,6 @@
 }
 li {list-style: none;
    }
-      
- /*
-*/
-
 
 .menu-link {
     color: #95e1d3; 
@@ -179,7 +175,7 @@ SECTION 2
 }
 .teem-item{
     display: flex;
-
+    justify-content: space-between;
     text-align: center;
     line-height: 1.8;
 }
@@ -196,7 +192,7 @@ SECTION 2
 img{
     background-color: #95e1d3;
 }
-.teem-item li:hover{
+.teem-item .card:hover{
        transform: translate(-10px,-10px);
 
 }
@@ -257,10 +253,11 @@ img{
 /*
 FOOTER
 */
-footer {
+.container{
     display: flex;
     justify-content: space-between;
     min-height: 64px;
+    align-items: center;
 }
 .text-color{
     color: #f6a6a6;
