@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width: 1400px;
+    margin: 0 auto;
+}
+li {list-style: none;
+   }
+
+.menu-link {
+    color: #272727; 
+     font-size: 14px; 
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase; 
+     text-decoration: none;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: #f2d048;
+ font-size: 30px;
+ font-family: 'Open Sans', sans-serif;
+
+
+
+}
+.page-nav{
+    display: flex;
+    justify-content: space-between;
+    min-height: 94px;
+     align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 490px;
+
+}
+.menu-item{
+display: block;
+}
+
+.menu a:hover{
+    color: #f2d048;
+    transition: color 200ms linear;
+  
+}
+
+/*section 1*/
+.title{
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    min-height: 294px;
+
+}
+section{
+        font-family: 'Montserrat', sans-serif;
+}
+.title-services{
+    font-size: 24px;
+  color: #7a7a7a;
+  line-height: 1.6;
+  text-transform: none;
+}
+h2{
+    flex-wrap: wrap;
+    font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+      align-items: center;
+     align-content: center;
+}
+
+.service h3::before{
+    content: "";
+background: url(img/icons/Circle01.png);
+
+    width: 74px;
+    height: 74px;
+    display: flex;
+    color: #f2d048;
+
+    align-content: center;
+
+}
+.service .basket::before{
+  background-image: url(img/icons/Basket01.png);  
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.service .laptop::before{
+    background-image: url(img/icons/laptop02.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .service .lock::before{
+    background-image: url(img/icons/locked03.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+ 
+.list-serv{
+    width: 300px;
+    margin-bottom: 80px;
+    font-size: 16px;
+  line-height: 1.6;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+
+h3{
+    text-transform: uppercase;
+     font-size: 14px;
+     color: #333333;
+     line-height: 1.4;
+    }
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*  
+SECTION 2
+*/
+.message-menu{
+    background-color: #272727;
+    background-image: url(img/icons/map.png);
+}
+.title-contact{
+    color: #ffffff;
+}
+.text{ 
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/*
+FOOTER
+*/
+
