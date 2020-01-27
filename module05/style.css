@@ -149,7 +149,7 @@ color: rgb(26, 188, 156);
 
 /*  MAIN = H21 + after + картинки */
 main {
-    width: 1110px;
+
     margin: 0 auto;
 }
 .products {
@@ -157,7 +157,8 @@ main {
    
 } 
 .cotainer{
-     margin-top: 30px;
+     margin-top: 30px;   
+     width: 1110px;
 }
 .h21{
     font-size: 34px;
@@ -300,7 +301,7 @@ margin-right: 0;
     background-position: center;
 }
 .butt:hover{
-    background: #1abc9c;
+    background-color: #1abc9c;
 }
 .butt2{
     background: url(img/slides/icon02.png);
