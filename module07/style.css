@@ -3,23 +3,24 @@
     padding:0;
 }
 
-/*.Logo_Treehouse {
-  font-size: 26px;
-  font-family: "Wisdom";
-  color: rgb(255, 255, 255);
-  line-height: 1.577;
-  text-align: left;
-  position: absolute;
-  left: 235.937px;
-  top: 37.499px;
-  z-index: 53;
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */        
+
 }
-*/.
 .wrapper{
     width: 1400px;
     margin: 0 auto;
+
 }
 li {list-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
    }
 
 .menu-link {
@@ -34,8 +35,21 @@ li {list-style: none;
     text-decoration: none;
     color: #f2d048;
  font-size: 30px;
- font-family: 'Open Sans', sans-serif;
 
+/* , sans-serif;
+
+@font-face {
+    font-family: "AlexBrush-Regular";
+    src: url(fonts/AlexBrush-Regular)
+
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}*/
 
 
 }

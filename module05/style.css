@@ -149,7 +149,6 @@ color: rgb(26, 188, 156);
 
 /*  MAIN = H21 + after + картинки */
 main {
-
     margin: 0 auto;
 }
 .products {
@@ -228,12 +227,13 @@ margin-right: 0;
      margin-bottom: 0;
  }
 .item-blok-text {
-    height: 18px;
+    height: 40px;
     font-size: 16px;
     color: #ffffff;
     vertical-align: middle;
     font-weight: 600;
     text-transform: uppercase;
+    
 }
 
 .item-block .name {
@@ -241,6 +241,8 @@ margin-right: 0;
     text-transform: uppercase;
     display: inline-block;
     width: 200px;
+    height: 40px;
+    padding: 8px;
 }
 .item-block .price{
     background-color: #8c8c8c;
@@ -248,6 +250,8 @@ margin-right: 0;
     display: inline-block;
     margin-left: -4px;
     width: 55px;
+    height: 40px;
+    padding: 8px;
 }
 .overlay{
     vertical-align: middle;
@@ -276,19 +280,15 @@ margin-right: 0;
     margin-top: 10px;
     background-color: #323232;
 }
-.line:hover .lay-ic, .line-two{
+.line:hover .lay-ic,{
     background: #1abc9c;
 }
 
 .box{
     width: 150px;
     height: 50px;
-    background: url(img/slides/basket.png);
-    background-repeat: no-repeat;
-   
-    background-position: left;
 }
-.vpravo{ float: right;}
+.vpravo{    text-align: center;}
 
 .butt{
     width:50px;
@@ -316,6 +316,7 @@ background-repeat: no-repeat;
 .line-two:hover{
     background: #1abc9c
 }
+
 /*footer c fonom*/
 
 footer {
