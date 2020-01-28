@@ -2,6 +2,19 @@
     margin:0;
     padding:0;
 }
+
+/*.Logo_Treehouse {
+  font-size: 26px;
+  font-family: "Wisdom";
+  color: rgb(255, 255, 255);
+  line-height: 1.577;
+  text-align: left;
+  position: absolute;
+  left: 235.937px;
+  top: 37.499px;
+  z-index: 53;
+}
+*/.
 .wrapper{
     width: 1400px;
     margin: 0 auto;
@@ -74,24 +87,24 @@ h2{
    align-items: center;
    display: flex;
    flex-direction: column;
-      align-items: center;
-     align-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .service h3::before{
     content: "";
-background: url(img/icons/Circle01.png);
-
+    align-content: center;
     width: 74px;
     height: 74px;
     display: flex;
     color: #f2d048;
-
-    align-content: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
 
 }
 .service .basket::before{
-  background-image: url(img/icons/Basket01.png);  
+    background-image: url(img/icons/Basket01.png);  
     background-repeat: no-repeat;
     background-position: center;
 
@@ -138,6 +151,12 @@ SECTION 2
 .message-menu{
     background-color: #272727;
     background-image: url(img/icons/map.png);
+    height: 676px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .title-contact{
     color: #ffffff;
@@ -146,8 +165,31 @@ SECTION 2
     text-align: center;
     font-size: 15px;
 }
+.input-menu{
+    display: flex;
+    justify-content: center;
+    width: 940px;
+    height: 210px;
+    font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(186, 186, 186);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.input-menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button-submit{
+    width: 240px;
+    height: 68px;
+    color:  #ffffff;
+    background-color: #f2d048;
+}
 
-
+/*
+8*/
 /*
 FOOTER
 */
