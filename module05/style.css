@@ -203,13 +203,14 @@ margin-right: 0;
             position: relative;
             text-decoration: none;
             margin-left: auto;
+            text-align: center;
         }
 
 .overlay {
     position: absolute;
-    width: 100% ;
-    height: 326px;
-   
+    width: 251px ;
+    height: 318px;
+
     opacity: 0;
     text-align: center;
     top: 0px;
@@ -224,6 +225,7 @@ margin-right: 0;
  .item-block .img{
      background-color: #d4dceb;
      max-width: 255px;
+     max-height: 322px;
      margin-bottom: 0;
  }
 .item-blok-text {
@@ -246,7 +248,7 @@ margin-right: 0;
 }
 .item-block .price{
     background-color: #8c8c8c;
-    float: right;
+  
     display: inline-block;
     margin-left: -4px;
     width: 55px;
