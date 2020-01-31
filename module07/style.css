@@ -3,17 +3,53 @@
     padding:0;
 }
 
+/* montserrat-200italic - latin */
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 200;
+      src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'),
+           url('fonts/montserrat-v14-latin-200italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+           url('fonts/montserrat-v14-latin-200italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+/* montserrat-regular - latin */
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */        
-
-}
+         url('fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+    /* tangerine-regular - latin */
+@font-face {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tangerine Regular'), local('Tangerine-Regular'),
+         url('fonts/tangerine-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/tangerine-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-slab-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 .wrapper{
-    width: 1400px;
+    width: 940px;
     margin: 0 auto;
 
 }
@@ -24,33 +60,23 @@ li {list-style: none;
    }
 
 .menu-link {
-    color: #272727; 
+     color: #272727; 
      font-size: 14px; 
      font-family: 'Montserrat', sans-serif;
+     font-style: normal;
+     font-weight: 400;
      text-transform: uppercase; 
      text-decoration: none;
+
 }
 
 .logo-link{
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
     text-decoration: none;
     color: #f2d048;
  font-size: 30px;
-
-/* , sans-serif;
-
-@font-face {
-    font-family: "AlexBrush-Regular";
-    src: url(fonts/AlexBrush-Regular)
-
-  font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}*/
-
 
 }
 .page-nav{
@@ -81,18 +107,23 @@ display: block;
 flex-direction: column;
     justify-content: center;
     min-height: 294px;
+    
 
 }
 section{
         font-family: 'Montserrat', sans-serif;
 }
+
 .title-services{
-    font-size: 24px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
   color: #7a7a7a;
+      text-transform: none; 
   line-height: 1.6;
-  text-transform: none;
+ font-size: 20px;
 }
-h2{
+h2{ font-weight: 700;
     flex-wrap: wrap;
     font-size: 30px;
   color: #333333;
@@ -103,11 +134,14 @@ h2{
    flex-direction: column;
     align-items: center;
     align-content: center;
+
+
+    
 }
 
 .service h3::before{
     content: "";
-    align-content: center;
+    margin-left: 30px;
     width: 74px;
     height: 74px;
     display: flex;
@@ -115,6 +149,9 @@ h2{
     border-radius: 50%;
     border-style: solid;
     border-width: 4px;
+
+
+
 
 }
 .service .basket::before{
@@ -135,28 +172,38 @@ h2{
   }
  
 .list-serv{
-    width: 300px;
+    width: 290px;
     margin-bottom: 80px;
     font-size: 16px;
-  line-height: 1.6;
-
+  line-height: 2;
     display: flex;
     flex-direction:column;
     justify-content: center;
-}
+    align-items: center;
+    text-align: center;
+    }
 
 
-h3{
+h3{   font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
     text-transform: uppercase;
-     font-size: 14px;
+     font-size: 18px;
      color: #333333;
      line-height: 1.4;
+
     }
 
 .service{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+.servica-list-text{
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: rgb(118, 118, 118);
 }
 
 /*  
@@ -168,8 +215,9 @@ SECTION 2
     height: 676px;
     display: flex;
     flex-direction:column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+
 
 }
 .title-contact{
@@ -181,7 +229,7 @@ SECTION 2
 }
 .input-menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 940px;
     height: 210px;
     font-size: 14px;
@@ -194,12 +242,42 @@ SECTION 2
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
+.input{
+    width: 455px;
+    height: 54px;
+    text-transform: uppercase;
+}
+#id_email:valid{
+    border: 2px solid #21aa38;
+}
+#id_email:invalid{
+    border: 2px solid rgb(214, 12, 46);
+}
+.input:required:valid{
+    border: 2px solid rgb(214, 12, 46);
+}
+
+.input:required:invalid{
+    border: 2px solid #21aa38;
+}
+
+
+.textarea{
+    width: 455px;
+    height: 208px;
+    resize: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
 .button-submit{
     width: 240px;
     height: 68px;
     color:  #ffffff;
     background-color: #f2d048;
+    text-transform: uppercase;
 }
 
 /*
