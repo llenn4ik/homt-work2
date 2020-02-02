@@ -4,7 +4,7 @@
 }
 
 /* montserrat-200italic - latin */
-    @font-face {
+@font-face {
       font-family: 'Montserrat';
       font-style: italic;
       font-weight: 200;
@@ -22,7 +22,7 @@
          url('fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* montserrat-700 - latin */
-  @font-face {
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -111,13 +111,14 @@ flex-direction: column;
 
 }
 section{
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat';
+        font-weight: 900;
 }
 
 .title-services{
     font-family: 'Montserrat';
     font-style: italic;
-    font-weight: 200;
+    font-weight: 700;
   color: #7a7a7a;
       text-transform: none; 
   line-height: 1.6;
@@ -126,7 +127,7 @@ section{
 h2{ font-weight: 700;
     flex-wrap: wrap;
     font-size: 30px;
-  color: #333333;
+  color: #272727;
   text-transform: uppercase;
   line-height: 1.2;
    align-items: center;
@@ -186,10 +187,9 @@ h2{ font-weight: 700;
     }
 
 
-h3{   font-family: 'Montserrat';
+.icon{   font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
      font-size: 18px;
      color: #333333;
      line-height: 1.4;
@@ -236,7 +236,7 @@ SECTION 2
     height: 210px;
     font-size: 14px;
   font-family: "Montserrat";
-  color: rgb(186, 186, 186);
+  color: #bababa;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -252,17 +252,17 @@ SECTION 2
 
 }
 #id_email:valid{
-    outline: 2px solid #21aa38;
+    outline: 2px solid rgb(28, 185, 54);
 }
 #id_email:invalid{
-    outline: 2px solid rgb(214, 12, 46);
+    outline: 2px solid rgb(236, 19, 19);
 }
 .input:required:valid{
-    outline: 2px solid #21aa38);
+    outline: 2px solid rgb(28, 185, 54);
 }
 
 .input:required:invalid{
-    outline: 2px solid rgb(214, 12, 46);
+    outline: 2px solid rgb(236, 19, 19);
 }
 
 
