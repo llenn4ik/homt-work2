@@ -134,14 +134,11 @@ h2{ font-weight: 700;
    flex-direction: column;
     align-items: center;
     align-content: center;
-
-
-    
 }
 
 .service h3::before{
     content: "";
-    margin-left: 30px;
+    margin-bottom: 24px;
     width: 74px;
     height: 74px;
     display: flex;
@@ -150,29 +147,34 @@ h2{ font-weight: 700;
     border-style: solid;
     border-width: 4px;
 
-
-
-
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.item{
+    margin-top: 24px;
 }
 .service .basket::before{
     background-image: url(img/icons/Basket01.png);  
     background-repeat: no-repeat;
     background-position: center;
-
 }
 .service .laptop::before{
     background-image: url(img/icons/laptop02.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .lock::before{
+.service .lock::before{
     background-image: url(img/icons/locked03.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
- 
+
 .list-serv{
-    width: 290px;
+    width: 280px;
     margin-bottom: 80px;
     font-size: 16px;
   line-height: 2;
@@ -197,10 +199,10 @@ h3{   font-family: 'Montserrat';
 .service{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-.servica-list-text{
+.service-list-text{
   font-size: 14px;
   font-family: "RobotoSlab";
   color: rgb(118, 118, 118);
@@ -247,28 +249,28 @@ SECTION 2
 .input{
     width: 455px;
     height: 54px;
-    text-transform: uppercase;
+
 }
 #id_email:valid{
-    border: 2px solid #21aa38;
+    outline: 2px solid #21aa38;
 }
 #id_email:invalid{
-    border: 2px solid rgb(214, 12, 46);
+    outline: 2px solid rgb(214, 12, 46);
 }
 .input:required:valid{
-    border: 2px solid rgb(214, 12, 46);
+    outline: 2px solid #21aa38);
 }
 
 .input:required:invalid{
-    border: 2px solid #21aa38;
+    outline: 2px solid rgb(214, 12, 46);
 }
 
 
-.textarea{
+.text-area{
     width: 455px;
     height: 208px;
     resize: none;
-    text-transform: uppercase;
+
     font-size: 18px;
 }
 
@@ -278,11 +280,8 @@ SECTION 2
     color:  #ffffff;
     background-color: #f2d048;
     text-transform: uppercase;
+    margin-top: 30px;
 }
-
-/*
-8*/
-/*
-FOOTER
-*/
-
+.forma{
+    text-align: center;
+}
