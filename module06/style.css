@@ -194,9 +194,7 @@ img{
 }
 .teem-item .card:hover{
        transform: translate(-10px,-10px);
-
 }
-
 .card{
     position: relative;
 }
