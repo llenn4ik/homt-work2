@@ -272,21 +272,18 @@ SECTION 2
     width: 455px;
     height: 54px;}
 
-.input:placeholder-shown {
-        outline-width: 0px;
-}
-
-.input:valid{
+.input-focus:focus:valid{
     outline: 2px solid rgb(28, 185, 54);
 }
 
-.input:invalid{
+.input-focus:focus:invalid{
     outline: 2px solid rgb(236, 19, 19);
 }
 
 
 .text-area{
     width: 455px;
+
     height: 208px;
     resize: none;
     font-size: 18px;
