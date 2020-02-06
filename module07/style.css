@@ -114,8 +114,8 @@ display: block;
 
 /*section 1*/
 .title{
-    margin-top: 124px;
-    margin-bottom: 68px;
+    padding-top: 124px;
+    padding-bottom: 68px;
     display: flex;
 flex-direction: column;
     justify-content: center;
@@ -184,7 +184,7 @@ h2{ font-weight: 700;
 
 .list-serv{
     width: 280px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     font-size: 16px;
   line-height: 2;
     display: flex;
@@ -223,7 +223,6 @@ SECTION 2
     background-color: #272727;
     background-image: url(img/icons/map.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: right;
 }
 .message-menu{
@@ -237,7 +236,7 @@ SECTION 2
 
 }
 .contact-title{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 .title-contact{
     color: #ffffff;
@@ -253,7 +252,7 @@ SECTION 2
 }
 .input-menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 940px;
     height: 210px;
     font-size: 14px;
@@ -269,8 +268,10 @@ SECTION 2
 
 }
 .input{
-    width: 455px;
-    height: 54px;}
+    width: 435px;
+    height: 54px;
+    padding-left: 20px;
+}
 
 .input-focus:focus:valid{
     outline: 2px solid rgb(28, 185, 54);
@@ -282,11 +283,14 @@ SECTION 2
 
 
 .text-area{
-    width: 455px;
-
-    height: 208px;
+    width: 435px;
+    padding-left: 20px;
+    padding-top: 18px;
     resize: none;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(119, 119, 119);
+    font-weight: bold;
 }
 
 .button-submit{
@@ -296,6 +300,9 @@ SECTION 2
     background-color: rgb(254, 209, 54);
     text-transform: uppercase;
     margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Montserrat";
 }
 input::placeholder {
     color: rgb(186, 186, 186);
