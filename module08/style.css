@@ -234,4 +234,6 @@
        height: 258px;
        justify-content: space-between;
    }
+     .partner-item .img::after {
+        left: 128px}
 }
