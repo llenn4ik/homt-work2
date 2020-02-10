@@ -147,9 +147,10 @@ h2{ font-weight: 700;
 }
 .service h3::before{
     content: "";
-    margin-bottom: 24px;
+   
     width: 74px;
-    height: 74px;
+    height: 74px; 
+    margin-bottom: 24px;
     display: flex;
     color: rgb(254, 209, 54) ;
     border-radius: 50%;
