@@ -142,8 +142,13 @@
     width: 200px;
     height: 128px;
     text-align: center;
+
 }
-.partner-item .img::after{  
+.image{
+    border-radius: 50%;
+    border: 2px solid #ffffff ;
+}
+    .partner-item .img::after{  
             content: "";
             height: 32px; 
             width: 32px; 
@@ -167,19 +172,19 @@
         background-image: url(img/colb2.png);
         background-repeat: no-repeat;
         background-position: center;
-  }
-  .partner-item .cup::after{ 
+     }
+    .partner-item .cup::after{ 
     background-color: #1cd7ad;
     background-image: url(img/cup3.png);
     background-repeat: no-repeat;
     background-position: center;
-}
-.partner-item .fly::after{ 
+    }
+    .partner-item .fly::after{ 
     background-color: #4e73db;
     background-image: url(img/fly4.png);
     background-repeat: no-repeat;
     background-position: center;
-}
+    }
 
 .but-partners{
     display: block;
