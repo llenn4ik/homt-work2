@@ -189,15 +189,24 @@ SECTION 2
 .img{
     position: relative;
 }
-img{
-    background-color: #95e1d3;
+.pich{
+    height: 470px;
+    position: relative;
+    background-color: rgb(149, 225, 211);
 }
+.card-back{  height: 470px;
+    background-color: rgb(149, 225, 211);
+ }
+ .card .pich:hover{
+     transform: translate(-10px,-10px);
+ }
+ /*
 .teem-item .card:hover{
        transform: translate(-10px,-10px);
-}
+}*/
 .card{
     position: relative;
-}
+} 
 
 .overlay{
     position: absolute;
