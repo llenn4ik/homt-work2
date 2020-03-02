@@ -127,10 +127,10 @@ display: block;
     background-image: url(img/eagle.jpg); 
     background-position: center;
     background-size: cover;
-
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9));
     /* max-width: 100%; */
-    background: linear-gradient(rgba(239, 139, 138, 0.8),rgba(246, 219, 139, 0.8), url(img/eagle1.jpg)); 
-    background-color: linear-gradient(rgba(239, 139, 138, 0.8),rgba(246, 219, 139, 0.8)/*, url('img/eagle1.jpg')*/); 
+    /* background: linear-gradient(rgba(239, 139, 138, 0.8),rgba(246, 219, 139, 0.8) ); 
+    background-color: linear-gradient(rgba(239, 139, 138, 0.8),rgba(246, 219, 139, 0.8)/*,url(img/eagle1.jpg) url('img/eagle1.jpg')*/);  */
 
 }
 @media (min-resolution: 192dpi), (min-resolution: 2dppx){
@@ -333,6 +333,7 @@ SECTION 2
  }
  .teem__item__card .teem__item__card--pich:hover{
      transform: translate(-10px,-10px);
+         opacity: 1;
  }
  /*
 .teem-item .card:hover{
@@ -344,8 +345,8 @@ SECTION 2
 
 .teem__item__card__pich--overlay{
     position: absolute;
-    /* width: 380px;
-    height: 470px; */
+    width: 380px;
+    height: 470px;
     background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9));
     top: 0;
     display: flex;
