@@ -98,7 +98,7 @@ display: block;
     background-color: #f48c82;
 }
 .navigatuin__batt{
-    fill: #ffffff;
+    color: #ffffff;
 }
 .navigatuin__batt:hover{
     color: rgb(252, 227, 138);
@@ -134,7 +134,7 @@ display: block;
     .banner__picture{
     background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(img/eagle2@2x.jpg);
 
-}
+}}
 .kaush{
     font-family: 'Kaushan Script';
     font-style: normal;
@@ -376,7 +376,7 @@ SECTION 2
 }
 .social__link{
     display: block;
-    color: #ffffff;
+  
      width: 60px;
     height: 60px;
 }
@@ -386,7 +386,7 @@ SECTION 2
    height: 100%;
     border: 1px solid #f38181;
     background-color: #fce38a;
-
+  color: #ffffff;
  }
 /*
 .faceb{
@@ -435,7 +435,7 @@ FOOTER
 }
 
 
-
+/* 
 
 sec>ul>li>div>img  background color
-потом анимация
+потом анимация */
