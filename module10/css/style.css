@@ -134,7 +134,39 @@ display: block;
     .banner__picture{
     background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle2@2x.jpg);
 
-}}
+}
+.service__item .clock::before{
+    background: url(../img/icons/icon01@2x.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .service__item .line::before{
+      background: url(../img/icons/icon02@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .monitor::before{
+      background: url(../img/icons/icon03@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .book::before{
+      background: url(../img/icons/icon04@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .house::before{
+      background: url(../img/icons/icon05@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .cube::before{
+      background: url(../img/icons/icon06@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
 .kaush{
     font-family: 'Kaushan Script';
     font-style: normal;
@@ -196,7 +228,7 @@ flex-direction: column;
     min-height: 294px;
 
 }
-.services{
+.services__item{
         font-family: 'Montserrat', sans-serif;
 }
 h2{
@@ -212,7 +244,7 @@ h2{
      align-content: center;
 }
 
-.service h3::before{
+.service__item h3::before{
     content: "";
   
 
@@ -224,36 +256,37 @@ h2{
      position: absolute;
      left: 4px;
 }
-.service .clock::before{
-  background: url(img/icons/icon01.png);  
+.service__item .clock::before{
+  background: url(../img/icons/icon01.png);  
     background-repeat: no-repeat;
     background-position: center;
 }
-.service .line::before{
-    background: url(img/icons/icon02.png);  
+.service__item .line::before{
+    background: url(../img/icons/icon02.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .monitor::before{
-    background: url(img/icons/icon03.png);  
+  .service__item .monitor::before{
+    background: url(../img/icons/icon03.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .book::before{
-    background: url(img/icons/icon04.png);  
+  .service__item .book::before{
+    background: url(../img/icons/icon04.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .house::before{
-    background: url(img/icons/icon05.png);  
+  .service__item .house::before{
+    background: url(../img/icons/icon05.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .cube::before{
-    background: url(img/icons/icon06.png);  
+  .service__item .cube::before{
+    background: url(../img/icons/icon06.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
+
 .list-serv{
    position: relative;
     width: 300px;
@@ -270,7 +303,7 @@ h3{
      line-height: 1.4;
     }
 
-.service{
+.service__item{
     display: flex;
     flex-wrap: wrap;
 }
@@ -369,25 +402,35 @@ SECTION 2
 .card__overlay .social__item:focus{
     background-color: #f38181;
 }
+
+.social__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fce38a;
+}
+
+.social__item svg{
+   width: 30px;
+   height: 30px;
+   border: 1px solid #f38181;
+   fill: #f38181;
+ }
+
 .social__item .social__link:hover,
 .social__item .social__link:focus{
     background-color: #f38181;
     color: #ffffff;
 }
-.social__link{
-    display: block;
-  
-     width: 60px;
-    height: 60px;
+.social__item svg:hover{
+    background-color: #f38181;
+    fill: #ffffff;
 }
-
-.social__item svg{
-   width: 100%;
-   height: 100%;
-    border: 1px solid #f38181;
-    background-color: #fce38a;
-  color: #ffffff;
- }
+.social__item svg:focus{
+    background-color: #f38181;
+}
 /*
 .faceb{
     background-image: url(img/social/facebook.png);  
