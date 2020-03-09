@@ -30,7 +30,19 @@
          url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
+  /* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
 /* roboto-regular - latin */
 @font-face {
     font-family: 'Roboto';
@@ -54,14 +66,6 @@ li {list-style: none;
      font-family: 'Montserrat', sans-serif;
      text-transform: uppercase; 
      text-decoration: none;
- line-height: 1.2;
-
-     /*  font-size: 14px;
-  font-family: "Montserrat";
-   color: rgb(252, 227, 138);
-  text-transform: uppercase;
- 
- */
 }
 
 .navigation__logo-link{
@@ -120,10 +124,10 @@ display: block;
     background-color: inherit ;
 }
 .navigatuin__batt{
-    fill: #ffffff;
+    color: #ffffff;
 }
-.menu-item svg:hover{
-    fill: rgb(252, 227, 138);
+.navigatuin__batt:hover{
+    color: rgb(252, 227, 138);
 }
 .menu-item a:hover{
     color: rgb(252, 227, 138);
@@ -139,7 +143,7 @@ display: block;
     content: "";
     background-color:  rgb(252, 227, 138);
     height: 4px;
-    width: 100%;
+    width: 50px;
   display: flex;
     top: 35px;
     right: calc(50% - 105px);
@@ -150,32 +154,14 @@ display: block;
     transition: opacity 200ms linear;
 
 }
-
-.menu-item .menu__link__butt::after{
-    content: "";
-    background-color:  rgb(252, 227, 138);
-    height: 4px;
-    width: 20px;
-  display: flex;
-    top: 35px;
-    right: calc(50% - 105px);
-    opacity: 0;
-}
-.menu-item .menu__link__butt:hover::after{
-    opacity: 1;
-    transition: opacity 200ms linear;
-
-}
-
 .banner__picture{
     height: 938px;
-    /* background-image: url(../img/eagle-min.jpg);  */
- 
+    background-image: url(../img/eagle-min.jpg); 
+    background-position: center;
+    background-size: cover;
     background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle-min.jpg);
     max-width: 100%; 
-       background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 .banner__picture{
@@ -352,10 +338,7 @@ h2{
       background-repeat: no-repeat;
       background-position: center;
   }
-.service__item{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .list-serv{
    position: relative;
     width: 300px;
@@ -365,24 +348,17 @@ h2{
   line-height: 1.6;
 }
 
-.service__h3{
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
+h3{
     text-transform: uppercase;
      font-size: 14px;
      color: #333333;
      line-height: 1.4;
-     padding-bottom: 14px;
     }
-.service__text{    
-    font-family: "Roboto";
-    font-size: 15px;
-    color: rgb(153, 153, 153);
-    line-height: 1.6;
-  
-}
 
+.service__item{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /*
 SECTION 2
