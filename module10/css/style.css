@@ -121,7 +121,7 @@ display: block;
 }
 .menu__link__butt{
     border: none;
-    background-color: #f48c82;
+    background-color: inherit ;
 }
 .navigatuin__batt{
     color: #ffffff;
@@ -141,7 +141,7 @@ display: block;
 }
 .menu-item a::after{
     content: "";
-    color: rgb(252, 227, 138);
+    background-color:  rgb(252, 227, 138);
     height: 4px;
     width: 50px;
   display: flex;
@@ -161,6 +161,7 @@ display: block;
     background-size: cover;
     background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle-min.jpg);
     max-width: 100%; 
+    
 }
 
 .banner__picture{
@@ -258,7 +259,7 @@ align-items: center;
     color: rgb(255, 255, 255);
     font-weight: 700;
     text-transform: uppercase;
-
+    background-color: inherit ;
     display: block;
     margin: 0 auto;
     padding-top: 8px;
