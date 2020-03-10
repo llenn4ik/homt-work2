@@ -463,7 +463,7 @@ SECTION 2
     position: absolute;
     width: 380px;
     height: 470px;
-    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9));
+    /* background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)); */
     top: 0;
     display: flex;
     justify-content: center;
@@ -490,8 +490,8 @@ SECTION 2
 }
 
 .social__item svg{
-   width: 30px;
-   height: 30px;
+   width: 27px;
+   height: 27px;
  
    fill: #f38181;
  }
