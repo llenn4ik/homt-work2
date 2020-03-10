@@ -194,7 +194,10 @@ display: block;
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx){
     .banner__picture{
-    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle2@2x-min.jpg);
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle@2x-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
 
