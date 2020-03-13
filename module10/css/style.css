@@ -84,7 +84,7 @@ li {list-style: none;
      -webkit-box-align: center;
          -ms-flex-align: center;
              align-items: center;
-
+background-color: #f48c83;
 }
 .navigation__menu{
     display: -webkit-box;
@@ -171,7 +171,7 @@ display: block;
     height: 938px;
     /* background-image: url(../img/eagle-min.jpg);  */
  
-    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle-min.jpg);
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/picture-min.png);
     /* max-width: 100%;  */
        background-position: center;
     background-size: cover;
@@ -205,7 +205,7 @@ display: block;
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx){
     .banner__picture{
-    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/eagle@2x-min.jpg);
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../img/picture_2x-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,7 +267,10 @@ display: block;
     font-size: 150px;
     line-height: 0.933;
     text-align: center;
-  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+
 }
 .banner__butt{
     font-size: 14px;
@@ -298,6 +301,7 @@ flex-direction: column;
         font-family: 'Montserrat', sans-serif;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
 }
 h2{
     flex-wrap: wrap;
@@ -459,12 +463,14 @@ SECTION 2
     position: relative;
     background-color: rgb(149, 225, 211);
 }
-.card__back{  height: 470px;
+.card__back{ 
+     /* height: 470px; */
     background-color: rgb(149, 225, 211);
  }
  .card .card__pich:hover{
      transform: translate(-10px,-10px);
          opacity: 1;
+         transition: opacity 200ms linear;
  }
  /*
 .teem-item .card:hover{
@@ -547,24 +553,28 @@ font-weight: 700;
     border: 1px solid  rgb(204, 204, 204);
     height: 40px;
 }
+
 .email{
-    color: #7a7a7a;
+    color: #131111;
     font-size: 15px;
   font-family: "Roboto";
-
-  color: rgb(204, 204, 204);
   font-style: italic;
   line-height: 1.6;
   text-align: left;
     border: 0;
   
 }
+
+/* batton style */
+input::placeholder {
+    color: rgb(186, 186, 186);
+        font-weight: bold;}
+
 .submit{
     background-color: #95e1d3;
     color: #ffffff;
     font-size: 14px;
   font-family: "Montserrat";
-  color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.6;
