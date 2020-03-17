@@ -1,0 +1,109 @@
+.menu-link {
+    color: $main-white-color; 
+     font-size: 14px; 
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase; 
+     text-decoration: none;
+}
+
+.navigation__logo-link{
+    text-decoration: none;
+    color: $main-white-color;
+ font-size: 30px;
+ font-family: 'Open Sans', sans-serif;
+
+
+
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    min-height: 68px;
+     align-items: center;
+     /* background-color: #f48c82; */
+}
+.navigation__menu{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 490px;
+
+}
+.menu-item{
+display: block;
+}
+.menu__link__butt{
+    border: none;
+    background-color: inherit;
+}
+.navigation__batt{
+    fill: $main-white-color;
+  
+}
+.navigation__batt:hover{
+    fill: $menu-hover-color;
+}
+.menu-item a:hover{
+    color: $menu-hover-color;
+    transition: color 200ms linear;
+}
+
+.menu-item a::after{
+    content: "";
+    background-color:  $menu-hover-color;
+    height: 4px;
+    width: 100%;
+  display: flex;
+    top: 35px;
+    right: calc(50% - 105px);
+    opacity: 0;
+}
+.menu-item a:hover::after{
+    opacity: 1;
+    transition: opacity 200ms linear;
+
+}
+
+.menu-item .menu__link__butt::after{
+    content: "";
+    background-color: $menu-hover-color;
+    height: 4px;
+    width: 20px;
+  display: flex;
+    top: 35px;
+    right: calc(50% - 105px);
+    opacity: 0;
+}
+.menu-item .menu__link__butt:hover::after{
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+.banner__picture{
+    height: 938px;
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../images/picture-min.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .banner__picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+ .banner__title{
+            font-size: 58px;
+            line-height: 1.2;
+            padding-top: 154px;
+            padding-bottom: 58px;
+            color: $main-white-color;
+      }
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .banner__picture{
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(../images/picture_2x-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}

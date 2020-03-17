@@ -60,79 +60,10 @@
 li {list-style: none;
    }
 
-.menu-link {
-    color: #ffffff; 
-     font-size: 14px; 
-     font-family: 'Montserrat', sans-serif;
-     text-transform: uppercase; 
-     text-decoration: none;
-}
 
-.navigation__logo-link{
-    text-decoration: none;
-    color: #ffffff;
- font-size: 30px;
- font-family: 'Open Sans', sans-serif;
-
-
-
-}
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    min-height: 68px;
-     align-items: center;
-     /* background-color: #f48c82; */
-}
-.navigation__menu{
-    display: flex;
-    justify-content: space-between;
-    flex: 0 0 490px;
-
-}
-.menu-item{
-display: block;
-}
-.menu__link__butt{
-    border: none;
-    background-color: #f48c82;
-}
-.navigatuin__batt{
-    color: #ffffff;
-}
-.navigatuin__batt:hover{
-    color: rgb(252, 227, 138);
-}
-.menu a:hover{
-    color: rgb(252, 227, 138);
-    transition: color 200ms linear;
-}
-.menu a::after{
-    content: "";
-    color: rgb(252, 227, 138);
-    height: 4px;
-    width: 50px;
-  display: flex;
-    top: 35px;
-    right: calc(50% - 105px);
-    opacity: 0;
-}
-.menu a:hover::after{
-    opacity: 1;
-    transition: opacity 200ms linear;
-
-}
-.banner__picture{
-    height: 938px;
-    background-image: url(img/eagle.jpg); 
-    background-position: center;
-    background-size: cover;
-    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(img/eagle.jpg);
-    max-width: 100%; 
-}
 @media (min-resolution: 192dpi), (min-resolution: 2dppx){
     .banner__picture{
-    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(img/eagle2@2x.jpg);
+    background: linear-gradient(rgba(239, 139, 138, 0.9),rgba(246, 219, 139, 0.9)), url(img/picture_2x-min.png);
 
 }}
 .kaush{
@@ -151,9 +82,84 @@ align-items: center;
     line-height: 1.2;
     padding-top: 154px;
     padding-bottom: 58px;
-    color: #ffffff;
+    color: $main-white-color;
  
 }
+.h2{
+     font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.banner__h2{   width: 700px;
+    color: $main-white-color;
+    text-transform: uppercase;
+    font-size: 120px;
+    text-align: center;
+    padding-bottom: 110px;
+    font-size: 150px;
+    line-height: 0.933;
+    text-align: center;
+  
+}
+.banner__butt{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $main-white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+    border: 2px solid #ffffff;
+ 
+    text-align: center;
+    width: 156px;
+    height: 30px
+}
+
+
+.service__item .clock::before{
+    background: url(../img/icons/icon01@2x.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+     }
+     .service__item .line::before{
+      background: url(../img/icons/icon02@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+    .service__item .monitor::before{
+      background: url(../img/icons/icon03@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .book::before{
+      background: url(../img/icons/icon04@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .house::before{
+      background: url(../img/icons/icon05@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .service__item .cube::before{
+      background: url(../img/icons/icon06@2x.png);  
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+.kaush{
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+}
+
 .h2{
      font-family: 'Montserrat';
     font-style: normal;
@@ -169,7 +175,10 @@ align-items: center;
     font-size: 150px;
     line-height: 0.933;
     text-align: center;
-  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+
 }
 .banner__butt{
     font-size: 14px;
@@ -177,7 +186,7 @@ align-items: center;
     color: rgb(255, 255, 255);
     font-weight: 700;
     text-transform: uppercase;
-
+    background-color: inherit ;
     display: block;
     margin: 0 auto;
     padding-top: 8px;
@@ -196,8 +205,11 @@ flex-direction: column;
     min-height: 294px;
 
 }
-.services{
+.services__item{
         font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 }
 h2{
     flex-wrap: wrap;
@@ -212,7 +224,7 @@ h2{
      align-content: center;
 }
 
-.service h3::before{
+.service__item h3::before{
     content: "";
   
 
@@ -224,36 +236,40 @@ h2{
      position: absolute;
      left: 4px;
 }
-.service .clock::before{
-  background: url(img/icons/icon01.png);  
+.service__item .clock::before{
+  background: url(../img/icons/icon01.png);  
     background-repeat: no-repeat;
     background-position: center;
 }
-.service .line::before{
-    background: url(img/icons/icon02.png);  
+.service__item .line::before{
+    background: url(../img/icons/icon02.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .monitor::before{
-    background: url(img/icons/icon03.png);  
+  .service__item .monitor::before{
+    background: url(../img/icons/icon03.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .book::before{
-    background: url(img/icons/icon04.png);  
+  .service__item .book::before{
+    background: url(../img/icons/icon04.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .house::before{
-    background: url(img/icons/icon05.png);  
+  .service__item .house::before{
+    background: url(../img/icons/icon05.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
-  .service .cube::before{
-    background: url(img/icons/icon06.png);  
+  .service__item .cube::before{
+    background: url(../img/icons/icon06.png);  
       background-repeat: no-repeat;
       background-position: center;
   }
+.service__item{
+    display: flex;
+    flex-wrap: wrap;
+}
 .list-serv{
    position: relative;
     width: 300px;
@@ -263,17 +279,24 @@ h2{
   line-height: 1.6;
 }
 
-h3{
+.service__h3{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
     text-transform: uppercase;
      font-size: 14px;
      color: #333333;
      line-height: 1.4;
+     padding-bottom: 14px;
     }
-
-.service{
-    display: flex;
-    flex-wrap: wrap;
+.service__text{    
+    font-family: "Roboto";
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+  
 }
+
 
 /*
 SECTION 2
@@ -290,6 +313,7 @@ SECTION 2
     opacity: 1;
 
 }
+
 .team__order{
     text-align: center;
 }
@@ -318,14 +342,26 @@ SECTION 2
     justify-content: space-between;
     text-align: center;
     line-height: 1.8;
+    padding-bottom: 70px;
 }
 .team__name{
      font-size: 14px; 
      text-transform: uppercase;
+     font-family: "Montserrat";
+     color: rgb(51, 51, 51);
+     line-height: 1.2;
+   font-weight: 700;
+   padding-top: 30px;
 }
 .team__special{
      font-size: 16px;
      color: rgb(153, 153, 153);
+     font-size: 15px;
+     font-family: "Roboto";
+     color: rgb(153, 153, 153);
+     font-style: italic;
+     line-height: 1.6;
+   
 }
 /* .img{
     position: relative;
@@ -335,12 +371,14 @@ SECTION 2
     position: relative;
     background-color: rgb(149, 225, 211);
 }
-.card__back{  height: 470px;
+.card__back{ 
+     /* height: 470px; */
     background-color: rgb(149, 225, 211);
  }
  .card .card__pich:hover{
      transform: translate(-10px,-10px);
          opacity: 1;
+         transition: opacity 200ms linear;
  }
  /*
 .teem-item .card:hover{
@@ -369,73 +407,89 @@ SECTION 2
 .card__overlay .social__item:focus{
     background-color: #f38181;
 }
+
+.social__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fce38a;
+    border: 1px solid #f38181;
+}
+
+.social__item svg{
+   width: 27px;
+   height: 27px;
+ 
+   fill: #f38181;
+ }
+
 .social__item .social__link:hover,
 .social__item .social__link:focus{
     background-color: #f38181;
     color: #ffffff;
 }
-.social__link{
-    display: block;
-  
-     width: 60px;
-    height: 60px;
+.social__item svg:hover{
+    background-color: #f38181;
+    fill: #ffffff;
 }
-
-.social__item svg{
-   width: 100%;
-   height: 100%;
-    border: 1px solid #f38181;
-    background-color: #fce38a;
-  color: #ffffff;
- }
-/*
-.faceb{
-    background-image: url(img/social/facebook.png);  
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: #fce38a ;
+.social__item svg:focus{
+    background-color: #f38181;
 }
-.twitt{
-    background-image: url(img/social/twitter.png);  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fce38a ;
-}
-.pint{
-    background-image: url(img/social/pinterest.png);  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fce38a ;
-}
-.inst{
-    background-image: url(img/social/instagram.png);  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fce38a ;
-} */
 
 /*
 FOOTER
 */
-.container{
+.footer{
     display: flex;
     justify-content: space-between;
     min-height: 64px;
     align-items: center;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+.footer__signature{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+font-weight: 700;  
 }
 .text-color{
     color: #f6a6a6;
 }
-.email{
-    color: #7a7a7a;
+
+/* batton style */
+.footer__but{
+    border: 1px solid  rgb(204, 204, 204);
+    height: 40px;
+    display: flex;
 }
+
+.email{
+    color: #131111;
+    font-size: 15px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+    border: 0;
+  width: 230px;
+}
+
+
+input::placeholder {
+    color: rgb(186, 186, 186);
+        font-weight: bold;}
+
 .submit{
     background-color: #95e1d3;
     color: #ffffff;
+    font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+  width: 150px;
+  height: 40px;
+    border: 0;
 }
-
-
-/* 
-
-sec>ul>li>div>img  background color
-потом анимация */
