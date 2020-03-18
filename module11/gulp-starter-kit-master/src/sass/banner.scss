@@ -1,7 +1,7 @@
 .menu-link {
     color: $main-white-color; 
      font-size: 14px; 
-     font-family: 'Montserrat', sans-serif;
+     font-family: $font-title;
      text-transform: uppercase; 
      text-decoration: none;
 }
@@ -98,6 +98,53 @@ display: block;
             padding-bottom: 58px;
             color: $main-white-color;
       }
+
+
+      .kaush{
+        font-family: $font-kaush;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: none;
+    }
+      
+.h2{    margin: 0 auto;
+    font-family: $font-title
+   font-style: normal;
+   font-weight: 700;
+}
+
+.banner__h2{   
+    margin: 0 auto;
+    width: 700px;
+   color: $main-white-color;
+   text-transform: uppercase;
+   font-size: 120px;
+   text-align: center;
+   padding-bottom: 110px;
+   font-size: 150px;
+   line-height: 0.933;
+   text-align: center;
+   font-family: $font-title;
+   font-style: normal;
+   font-weight: 700;
+
+}
+.banner__butt{
+   font-size: 14px;
+   font-family: $font-title;
+   color: $main-white-color;
+   font-weight: 700;
+   text-transform: uppercase;
+   background-color: inherit ;
+   display: block;
+   margin: 0 auto;
+   padding-top: 8px;
+   border: 2px solid $main-white-color;
+
+   text-align: center;
+   width: 156px;
+   height: 30px
+}
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx){
     .banner__picture{

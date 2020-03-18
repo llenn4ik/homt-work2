@@ -1,0 +1,101 @@
+
+/*section 1*/
+.services__head {
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    min-height: 294px;
+
+}
+.services__item{
+        font-family: $font-title;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+h2{
+    flex-wrap: wrap;
+    font-size: 30px;
+  color: $main-title-color;
+  text-transform: uppercase;
+  line-height: 1.2;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+      align-items: center;
+     align-content: center;
+}
+
+.service__item h3::before{
+    content: "";
+  
+
+    width: 36px;
+    height: 36px;
+    display: flex;
+    color: $main-blue-color;
+    align-content: center;
+     position: absolute;
+     left: 4px;
+}
+.service__item .clock::before{
+  background: url(../images/icons/icon01.png);  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.service__item .line::before{
+    background: url(../images/icons/icon02.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .service__item .monitor::before{
+    background: url(../images/icons/icon03.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .service__item .book::before{
+    background: url(../images/icons/icon04.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .service__item .house::before{
+    background: url(../images/icons/icon05.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .service__item .cube::before{
+    background: url(../images/icons/icon06.png);  
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+.service__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-serv{
+   position: relative;
+    width: 300px;
+    padding-left: 50px;
+    margin-bottom: 80px;
+    font-size: 16px;
+  line-height: 1.6;
+}
+
+.service__h3{
+    font-size: 14px;
+    font-family: $font-title;
+    color: $main-title-color;
+    text-transform: uppercase;
+     font-size: 14px;
+    //  color: #333333;
+     line-height: 1.4;
+     padding-bottom: 14px;
+    }
+
+.service__text{    
+    font-family: $font-text;
+    font-size: 15px;
+    color: $secondary-title-color;
+    line-height: 1.6;
+  
+}

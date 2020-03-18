@@ -1,7 +1,15 @@
 /*
  * Все паршалы импортировать в этот файл
  */
+@import 'variables';
+@import 'fonts';
+
+@import 'banner.scss';
+@import 'services';
+@import 'teamsection';
+@import 'footer';
+
+
 
 @import 'normalize.scss';
 @import 'base.scss';
-@import 'banner.scss';
