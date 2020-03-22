@@ -5,23 +5,26 @@
     min-height: 64px;
     align-items: center;
     border-top: 1px solid $footer-batt-color;
-}
-.footer__signature{
-    font-size: 14px;
-    font-family: $font-title;
-    color: rgb(51, 51, 51);
-font-weight: 700;  
+
+    &__signature{
+        font-size: 14px;
+        font-family: $font-title;
+        color: rgb(51, 51, 51);
+    font-weight: 700;  
+    }
+
+    &__but{
+        border: 1px solid  $footer-batt-color;
+        height: 40px;
+        display: flex;
+    }
+
 }
 .text-color{
     color: $hover-social-color;
 }
 
-/* batton style */
-.footer__but{
-    border: 1px solid  $footer-batt-color;
-    height: 40px;
-    display: flex;
-}
+
 
 .email{
     color: #131111;

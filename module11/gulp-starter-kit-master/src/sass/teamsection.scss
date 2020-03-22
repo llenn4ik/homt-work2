@@ -64,18 +64,9 @@ SECTION 2
      line-height: 1.6;
    
 }
-/* .img{
-    position: relative;
-} */
-.card__pich{
-    height: 470px;
-    position: relative;
-    background-color: $main-blue-color;
-}
-.card__back{ 
-  
-    background-color: $main-blue-color;
- }
+
+
+
  .card .card__pich:hover{
      transform: translate(-10px,-10px);
          opacity: 1;
@@ -87,9 +78,18 @@ SECTION 2
 }*/
 .card{
     position: relative;
-} 
 
-.card__overlay{
+    &__pich{
+        height: 470px;
+        position: relative;
+        background-color: $main-blue-color;
+    }
+    
+    &__back{ 
+        background-color: $main-blue-color;
+    }
+
+    &__overlay{
     position: absolute;
     width: 380px;
     height: 470px;
@@ -99,11 +99,15 @@ SECTION 2
     justify-content: center;
     align-items: center;
     opacity: 0;
+
+        &:hover{
+            opacity: 1;
+            transition: opacity 200ms linear;
+            }
+    }
 }
-.card .card__overlay:hover{
-    opacity: 1;
-    transition: opacity 200ms linear;
-}
+
+
 .card__overlay .social__item:hover,
 .card__overlay .social__item:focus{
     background-color: $hover-social-color;
